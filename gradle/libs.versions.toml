@@ -1,0 +1,17 @@
+[versions]
+kotlin = "2.4.10"
+adventure = "5.2.0"
+velocity = "4.1.0-SNAPSHOT"
+shadow = "9.6.1"
+spotless = "8.9.0"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "kotlin" }
+velocity = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
+adventure-api = { module = "net.kyori:adventure-api", version.ref = "adventure" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
